@@ -15,10 +15,10 @@ public class ApplicationManager {
        driver=new ChromeDriver();
        driver.manage().window().maximize();
    }
-   @AfterMethod
-    public void tearDown(){
-if(driver!=null){
-    driver.quit();
-}
-   }
+  // @AfterMethod
+ //  public void tearDown(){
+//if(driver!=null){
+  //  driver.quit();
+//}
+  // }
 }
