@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a38a64-d3f3-44fa-a9d8-86667fb5fa47" name="Changes" comment="HW5.added Assert">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SingUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SingUpPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testes/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testes/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testes/RegisrtationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testes/RegisrtationTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="d7a38a64-d3f3-44fa-a9d8-86667fb5fa47" name="Changes" comment="HW5.added Assert" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,20 +32,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.HomeTests.executor": "Run",
-    "TestNG.HomeTests.firstTest.executor": "Run",
-    "TestNG.LoginTest.loginNegativeTest_wronePassword.executor": "Run",
-    "TestNG.LoginTest.loginPositiveTest.executor": "Run",
-    "TestNG.RegisrtationTest.RegistrationPositivTest.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;TestNG.HomeTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomeTests.firstTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginNegativeTest_wronePassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegisrtationTest.RegistrationPositivTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.LoginTest.loginNegativeTest_wronePassword">
     <configuration name="HomeTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA44IlCarro" />
@@ -195,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726158658259</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="HW5.added Assert">
+      <option name="closed" value="true" />
+      <created>1726418300939</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726418300939</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
