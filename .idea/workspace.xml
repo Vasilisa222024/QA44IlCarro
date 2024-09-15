@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a38a64-d3f3-44fa-a9d8-86667fb5fa47" name="Changes" comment="HW5">
+    <list default="true" id="d7a38a64-d3f3-44fa-a9d8-86667fb5fa47" name="Changes" comment="HW5.added Assert">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SingUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SingUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testes/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testes/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testes/RegisrtationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testes/RegisrtationTest.java" afterDir="false" />
     </list>
@@ -37,20 +41,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;TestNG.HomeTests.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.HomeTests.firstTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.LoginTest.loginPositiveTest.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.RegisrtationTest.RegistrationPositivTest.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "TestNG.HomeTests.executor": "Run",
+    "TestNG.HomeTests.firstTest.executor": "Run",
+    "TestNG.LoginTest.loginNegativeTest_wronePassword.executor": "Run",
+    "TestNG.LoginTest.loginPositiveTest.executor": "Run",
+    "TestNG.RegisrtationTest.RegistrationPositivTest.executor": "Run",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.RegisrtationTest.RegistrationPositivTest">
+}]]></component>
+  <component name="RunManager" selected="TestNG.LoginTest.loginNegativeTest_wronePassword">
     <configuration name="HomeTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA44IlCarro" />
       <extension name="coverage">
@@ -79,6 +84,24 @@
       <option name="PACKAGE_NAME" value="testes" />
       <option name="MAIN_CLASS_NAME" value="testes.HomeTests" />
       <option name="METHOD_NAME" value="firstTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.loginNegativeTest_wronePassword" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA44IlCarro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testes" />
+      <option name="MAIN_CLASS_NAME" value="testes.LoginTest" />
+      <option name="METHOD_NAME" value="loginNegativeTest_wronePassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -124,6 +147,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest.loginNegativeTest_wronePassword" />
         <item itemvalue="TestNG.RegisrtationTest.RegistrationPositivTest" />
         <item itemvalue="TestNG.LoginTest.loginPositiveTest" />
         <item itemvalue="TestNG.HomeTests" />
@@ -163,12 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1726085590876</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="HW5.added Assert">
+      <option name="closed" value="true" />
+      <created>1726158658259</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726158658259</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="added changes" />
     <MESSAGE value="HW5" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW5" />
+    <MESSAGE value="HW5.added Assert" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW5.added Assert" />
   </component>
 </project>

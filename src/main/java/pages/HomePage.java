@@ -17,7 +17,7 @@ public class HomePage extends BasePage {
     WebElement btnSinUp;
     @FindBy(xpath = "//a[text()='Log in']")
     WebElement btnLogin;
-@FindBy(xpath = "//a[@href=\"/search\"]")
+@FindBy(xpath = "//a[@href='search']")
 WebElement search;
     public SingUpPage clickBtnSinUpHeader(){
         btnSinUp.click();
@@ -28,7 +28,5 @@ public LoginPage clickBtnLoginHeader(){
         return new LoginPage(driver);
 }
 
-    public  boolean isElementSearchPresent(){
-       return search.isDisplayed();
-    }
+
 }

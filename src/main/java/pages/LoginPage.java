@@ -6,26 +6,50 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
-public class LoginPage extends BasePage{
-    public LoginPage (WebDriver driver){
+public class LoginPage extends BasePage {
+    public LoginPage(WebDriver driver) {
         setDriver(driver);
-        PageFactory.initElements(new AjaxElementLocatorFactory(driver,10),
-                this);}
+        PageFactory.initElements(new AjaxElementLocatorFactory(driver, 10),
+                this);
+    }
 
-    @FindBy(xpath = "//input[@id='email']")
+    @FindBy(xpath = "//input[@id='email']")//@FindBy(id = "email")
     WebElement inputEmail;
     @FindBy(xpath = "//input[@id='password']")
     WebElement inputPassword;
     @FindBy(xpath = "//button[@type='submit']")
-    WebElement cleckYalla;
+    WebElement cleckBtnYalla;
+    @FindBy(xpath = "//h2[@class='message']")
+    WebElement textPopUp_LoginSucces;
+    @FindBy(xpath = "//h2[@class='message']")
+    WebElement textPopUp_Loginfailed;
 
-    public  LoginPage typeloginForm(String email,String password){
+    public LoginPage typeloginForm(String email, String password) {
         inputEmail.sendKeys(email);
         inputPassword.sendKeys(password);
         return this;
     }
-    public HomePage clickBtnLoginPositiv(){
-        cleckYalla.click();
-        return new  HomePage(driver);
+//nado ostatsy na toyje page for pop ap
+    public LoginPage clickBtnLoginPositiv() {
+        pause(3);
+        cleckBtnYalla.click();
+        return this;
     }
+//for ASSIRT
+    public boolean isTextInElementPresent_LoginSuccess(){
+        return isTextInElementPresent(textPopUp_LoginSucces, "Logged in success");
+
+}
+
+public  boolean isTextInElementPresent_LoginFailed() {
+    return isTextInElementPresent(textPopUp_Loginfailed, "Login or Password incorrect");
+}
+
+//Negative
+    public LoginPage clickBtnLoginNegative(){
+        cleckBtnYalla.click();
+        return new LoginPage(driver);
+    }
+
+
 }
