@@ -1,5 +1,6 @@
 package pages;
 
+import dto.UserDto;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -30,7 +31,8 @@ public class SingUpPage extends BasePage {
     WebElement btnSingUp;
    @FindBy(xpath = "//h2[@class='message']")
     WebElement textPopUp_regSuccess;
-
+@FindBy(xpath = "//input[@id='email']/../div[@class='error']/div")
+WebElement wrongEmail;
 
      public SingUpPage typeRegistrationForm
              (String name,String lastName,String email,String password){
@@ -66,5 +68,16 @@ public SingUpPage clickCheckBoox(){
          btnSingUp.click();
          return this;
    }
+
+    public SingUpPage typeRegistrationForm(UserDto user) {
+        inputName.sendKeys(user.getName());
+        inputLastName.sendKeys(user.getLastName());
+        inputEmail.sendKeys(user.getEmail());
+        inputPassword.sendKeys(user.getPassword());
+        return this;
+    }
+    public boolean isTextInElementPresent_WronEmail(String text){
+        return isTextInElementPresent(wrongEmail, text);
+    }
 }
 

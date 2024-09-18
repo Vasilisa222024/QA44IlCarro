@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import utils.HeaderMenuItem;
 
 public class BasePage {
     static WebDriver driver;
@@ -21,4 +22,9 @@ public class BasePage {
         return element.getText().contains(text);
 
     }
+//public static <T extends BasePage>T clickButtonsOnHeader(HeaderMenuItem headerMenuItem){
+        
+//}
+
+
 }
