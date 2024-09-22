@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7a38a64-d3f3-44fa-a9d8-86667fb5fa47" name="Changes" comment="HW6">
-      <change afterPath="$PROJECT_DIR$/src/main/java/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/HeaderMenuItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RondomUtils.java" afterDir="false" />
+    <list default="true" id="d7a38a64-d3f3-44fa-a9d8-86667fb5fa47" name="Changes" comment="HW7">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/LetTheCarWorkPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/TermsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/SingUpPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/SingUpPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testes/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testes/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testes/RegisrtationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testes/RegisrtationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -35,6 +30,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/src/main/java/dto/UserDto.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/src/main/java/pages/LoginPage.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/pages/SingUpPage.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/src/main/java/utils/HeaderMenuItem.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -48,25 +45,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "TestNG.HomeTests.executor": "Run",
-    "TestNG.HomeTests.firstTest.executor": "Run",
-    "TestNG.LoginTest.loginNegativeTest_validEmail_emptyPassword.executor": "Run",
-    "TestNG.LoginTest.loginNegativeTest_wroneEmailWOAt.executor": "Run",
-    "TestNG.LoginTest.loginNegativeTest_wronePassword.executor": "Run",
-    "TestNG.LoginTest.loginNegativeTest_wronePassword_UnregisretUser.executor": "Run",
-    "TestNG.LoginTest.loginPositiveTest.executor": "Run",
-    "TestNG.RegisrtationTest.RegistrationNegativTest_WronEmail.executor": "Run",
-    "TestNG.RegisrtationTest.RegistrationPositivTest.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.HomeTests.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.HomeTests.firstTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginNegativeTest_validEmail_emptyPassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginNegativeTest_wroneEmailWOAt.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginNegativeTest_wroneEmailWOAt_Enam.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginNegativeTest_wronePassword.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginNegativeTest_wronePassword_UnregisretUser.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.LoginTest.loginPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegisrtationTest.RegistrationNegativTest_WronEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RegisrtationTest.RegistrationPositivTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.RegisrtationTest.RegistrationNegativTest_WronEmail">
+}</component>
+  <component name="RunManager" selected="TestNG.HomeTests.firstTest">
+    <configuration name="HomeTests.firstTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="QA44IlCarro" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testes" />
+      <option name="MAIN_CLASS_NAME" value="testes.HomeTests" />
+      <option name="METHOD_NAME" value="firstTest" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest.loginNegativeTest_validEmail_emptyPassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA44IlCarro" />
       <extension name="coverage">
@@ -85,7 +100,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.loginNegativeTest_wroneEmailWOAt" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="LoginTest.loginNegativeTest_wroneEmailWOAt_Enam" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="QA44IlCarro" />
       <extension name="coverage">
         <pattern>
@@ -95,25 +110,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="testes" />
       <option name="MAIN_CLASS_NAME" value="testes.LoginTest" />
-      <option name="METHOD_NAME" value="loginNegativeTest_wroneEmailWOAt" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.loginNegativeTest_wronePassword" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="QA44IlCarro" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testes" />
-      <option name="MAIN_CLASS_NAME" value="testes.LoginTest" />
-      <option name="METHOD_NAME" value="loginNegativeTest_wronePassword" />
+      <option name="METHOD_NAME" value="loginNegativeTest_wroneEmailWOAt_Enam" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -159,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.HomeTests.firstTest" />
+        <item itemvalue="TestNG.LoginTest.loginNegativeTest_wroneEmailWOAt_Enam" />
         <item itemvalue="TestNG.RegisrtationTest.RegistrationNegativTest_WronEmail" />
         <item itemvalue="TestNG.LoginTest.loginNegativeTest_validEmail_emptyPassword" />
         <item itemvalue="TestNG.LoginTest.loginNegativeTest_wronePassword_UnregisretUser" />
-        <item itemvalue="TestNG.LoginTest.loginNegativeTest_wroneEmailWOAt" />
-        <item itemvalue="TestNG.LoginTest.loginNegativeTest_wronePassword" />
       </list>
     </recent_temporary>
   </component>
@@ -223,7 +220,23 @@
       <option name="project" value="LOCAL" />
       <updated>1726418448424</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="HW7">
+      <option name="closed" value="true" />
+      <created>1726689898968</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1726689898968</updated>
+    </task>
+    <task id="LOCAL-00007" summary="HW7">
+      <option name="closed" value="true" />
+      <created>1726689916659</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1726689916659</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -231,6 +244,7 @@
     <MESSAGE value="HW5" />
     <MESSAGE value="HW5.added Assert" />
     <MESSAGE value="HW6" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW6" />
+    <MESSAGE value="HW7" />
+    <option name="LAST_COMMIT_MESSAGE" value="HW7" />
   </component>
 </project>

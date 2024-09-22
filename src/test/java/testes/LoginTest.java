@@ -5,8 +5,11 @@ import manager.ApplicationManager;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
+import pages.LoginPage;
+import utils.HeaderMenuItem;
 
 import static utils.RondomUtils.*;
+import static pages.BasePage.clickButtonsOnHeader;
 
 public class LoginTest extends ApplicationManager {
     @Test
@@ -52,6 +55,22 @@ public class LoginTest extends ApplicationManager {
 
     }
 
+    @Test
+    public void loginNegativeTest_wroneEmailWOAt_Enam() {
+
+        UserDto user = new UserDto(generateString(5), generateString(6),
+                generateString(9), "Qa4654fdhg!");
+        new  HomePage(getDriver());
+        LoginPage loginPage=clickButtonsOnHeader(HeaderMenuItem.LOGIN);
+                loginPage.typeloginForm(user)
+                .clickBtnLoginNegative()
+                .isTextInElementPresent_LoginFailed("It'snot look like email")
+
+
+        ;
+
+
+    }
     @Test
     public void loginNegativeTest_validEmail_emptyPassword() {
         Assert.assertTrue(
